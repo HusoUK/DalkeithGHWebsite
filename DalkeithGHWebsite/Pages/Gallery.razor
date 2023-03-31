@@ -1,0 +1,42 @@
+﻿@page "/gallery"
+
+<div class="txt-center">
+    <h1>Dalkeith Guest House: Gallery</h1>
+</div>
+
+<div>
+    <div class="container">
+        <div class="gallery-picutres row row-cols-4">
+            @foreach (var pic in galleryPictures)
+            {
+            <div class="col"><img class="gallery-pic" src="@pic"/></div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    List<string> galleryPictures = new List<string>()
+    {
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/BreakfastPage/Breakfast sideboard 400x400.jpg.png",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/BreakfastPage/breakfast table 400x400.jpg.png",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/BreakfastPage/Dining Room 400x400.jpg.png",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/BreakfastPage/Egg.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/BreakfastPage/fruit bowl 400x400.jpg.png",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/BreakfastPage/Fruit salad 400x400.jpg.png",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePageLinks/breakfast-table.png",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePageLinks/catbells-view.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePageLinks/dalkeith-guest-house.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePageLinks/room-7.png",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/ThingsToDoPage/Canoeing.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/ThingsToDoPage/George-Fisher.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/ThingsToDoPage/Keswick-Beer-Festival.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/ThingsToDoPage/Mountain-Biking.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/ThingsToDoPage/Pencil-Museum.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/ThingsToDoPage/Rheged.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/ThingsToDoPage/the-lakes-distillery.png",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/ThingsToDoPage/Theatre-by-the-Lake.jpg",
+        "https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/ThingsToDoPage/Walking.jpg"
+    };
+
+}

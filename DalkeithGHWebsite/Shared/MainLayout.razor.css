@@ -1,0 +1,62 @@
+main {
+    position: absolute;
+    top: 195px;
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #909578;
+    color: #f3f9d9;
+}
+
+.facebook-logo {
+    width: 74%;
+    height:auto;
+}
+
+.pagecontent {
+    padding-bottom: 250px;
+}
+
+.top-details {
+    z-index: 3;
+    text-align: center;
+    background-color: #909578;
+    position:fixed;
+    width: 100%;
+}
+
+    .top-details p {
+        display: inline;
+        background-color: #909578;
+        padding-right: 15px;
+        font-size: 11px;
+    }
+
+.top-banner {
+    z-index: 3;
+    text-align: center;
+    background-color: #909578;
+    position: fixed;
+    top: 24px;
+    width: 100%;
+    height: auto;
+}
+
+.mynavbar {
+    z-index: 3;
+    position: fixed;
+    top: 158px;
+    width: 100%;
+    height: auto;
+    background-color: #909578;
+    text-align: center;
+}
+
+.footer-mini-map {
+    padding-top: 15px;
+    padding-bottom:15px;
+}

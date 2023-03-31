@@ -1,0 +1,91 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<Carousel @bind-SelectedSlide="@selectedSlide">
+<CarouselSlide Name="1">
+        <Image Source="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/Carousel/external mountain view.jpg" Text="Lights image" Display="Display.Block" Width="Width.Is100" />
+</CarouselSlide>
+<CarouselSlide Name="2">
+        <Image Source="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/Carousel/dining room.jpg" Text="Keyboard image" Display="Display.Block" Width="Width.Is100" />
+</CarouselSlide>
+<CarouselSlide Name="3">
+    <Image Source="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/Carousel/room7 headboard shot.jpg" Text="Road image" Display="Display.Block" Width="Width.Is100" />
+</CarouselSlide>
+</Carousel>
+
+<div class="homepage-links">
+    <a class="homepage-links-square" href="/rooms">
+        <figure>
+            <img src="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePageLinks/room-7.png" />
+            <figcaption>Rooms & Rates</figcaption>
+        </figure>
+    </a>
+    <a class="homepage-links-square" href="/breakfast">
+        <figure>
+            <img src="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePageLinks/breakfast-table.png" />
+            <figcaption>Breakfast</figcaption>
+        </figure>
+    </a>
+    <a class="homepage-links-square" href="/thingstodo">
+        <figure>
+            <img src="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePageLinks/catbells-view.jpg" />
+            <figcaption>Out & About</figcaption>
+        </figure>
+    </a>
+    <a class="homepage-links-square" href="/gallery">
+        <figure>
+            <img src="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePageLinks/dalkeith-guest-house.jpg" />
+            <figcaption>Gallery</figcaption>
+        </figure>
+    </a>
+</div>
+
+<article class="homepage-info">
+
+    <h1>Welcome to Dalkeith Guest House, Keswick</h1>
+
+    <p>
+        We welcome you to the family run <strong>Dalkeith Guest House</strong> – a beautiful stone-built Lakeland
+        Bed & Breakfast Guest House set in the Cumbrian market town of <strong>Keswick</strong> in the heart of
+        the <strong>Lake District National Park</strong>.<br />The atmosphere here is of a small friendly country
+        guest house, rather than a formal hotel. After all, Dalkeith is our home, and you are 
+        our guests!<br />The house is ideally situated in a quiet location only five minutes walk 
+        into the town centre of Keswick, with views towards the <strong>Skiddaw Fells</strong> to the North.
+    </p>    
+    <p>
+        It is an ideal base for exploring the Lakeland Fells – the Lake District is ideal for
+        both serious walkers and strollers.<br />Nearby are the lakes of Derwentwater and
+        Bassenthwaite and the whole town is surrounded by magnificent mountains.
+    </p>    
+    <p>
+        Mellow Borrowdale slate, traditional architecture built in 1878, just a few minutes 
+        walk from the River Greta & Fitz Park.
+    </p>
+    <p>
+        We hope you enjoy visiting our web site, and find the information you need about our 
+        friendly Keswick guest house accommodation and the local Keswick area. However, if 
+        you have any queries, please don’t hesitate to contact us.
+    </p>
+    <h4>A warm welcome awaits all our guests.</h4>
+
+
+</article>
+
+<div class="availability-btn">
+    <a href="/availability">
+        <button class="btn-primary"> Check Availability</button>
+    </a>    
+</div>
+
+<div class="homepage-pictures">
+    <img class="homepage-pic" src="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePagePics/Fruit-Salad.jpg" />
+    <img class="homepage-pic" src="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePagePics/Egg.jpg" />
+    <img class="homepage-pic" src="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePagePics/Room-7.jpg" />
+    <img class="homepage-pic" src="https://dalkeithgh.blob.core.windows.net/dalkeithguesthouse/HomePagePics/Room-1-Bathroom.png" />
+</div>
+
+
+@code {
+    private string selectedSlide = "1";
+}
